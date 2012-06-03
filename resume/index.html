@@ -49,6 +49,7 @@
 			h1, h2, h3 {
 				font-weight: bold;
 				padding: 5px 0 0 0;
+				page-break-after: avoid;
 			}
 			
 			h1{
@@ -64,8 +65,14 @@
 				font-size: 100%;
 			}
 			
-			ul {margin-left: 1em; padding-left: 0;} 
-			p { font-style: italic;}
+			ul {
+				margin-left: 1em;
+				padding-left: 0;
+				page-break-after: auto;
+			} 
+			p {	font-style: italic;
+				page-break-inside: avoid
+			}
 
 			li ul {
 				list-style-type: square;
