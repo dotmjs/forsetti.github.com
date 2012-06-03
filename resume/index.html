@@ -6,195 +6,144 @@
 		<title>Resume: Matthew J. Smith</title>
 		<style type="text/css">
 /*<![CDATA[*/
-			html, body {
-				padding: 5px;
+			* {
 				margin: 0;
+				padding: 0;
+				border: 0;
+				border-collapse: collapse;
 				background-color: white;
+				color: black;
 				font-size: 10pt;
-				font-family: Helvetica;
-			}
-
-			p {
-				margin:0;
-				padding:0px 0px 0px 0px;
-			}
-			h1, h2, h3, h4, h5, h6{
-				margin: 0;
-				padding: 0;
-			}
-
-			h1{
-				font-size: 130%;
+				font-family: Arial, Helvetica, sans-serif;
+				font: inherit;
 				clear: both;
-			}
-			h2 {
-				font-size: 110%;
-				text-decoration: underline;
-				width: 100%;
-				clear: both;
-			}
-			h3 { font-size: 100%; }
-
-			ul {
-				margin-top: 0;
-				padding-top: 0;
-				padding-bottom: 10px;
-				margin-bottom:0px;
-				padding-left: 0px;
-				margin-left: 20px;
-				list-style-position: outside;
-				list-style-type: circle;
-			}
-
-			li{
-				margin: 0px;
-				padding: 0 0 3px 0;
-			}
-
-			.header3{
-				width: 100%;
-				text-align: center;
-				margin:0;
-				padding:0;
-			}
-			
-			.header3 *{
-				margin:0;
-				padding:0;
-				list-style-type: none;
-			}
-
-			.header3>tbody>tr>td:first-child{
-				text-align: left;				
-			}
-			.header3>tbody>tr>td:first-child+td{
-				text-align: center;				
-			}
-			.header3>tbody>tr>td:first-child+td+td{
-				text-align: right;				
-			}
-
-			#proficiencies {
-				margin:0;
-				padding:0;
-			}
-
-			#proficiencies tr td{
-				width: 42%;
-				display: inline-block;
-				list-style-position: inside;
-				padding: 0 2% 0 2%;
-				margin: 0;
-				vertical-align: top;
-				font-weight: bold;
-				
-			}
-
-			#proficiencies tr td>*{
 				font-weight: normal;
+				vertical-align: baseline;
 			}
 
-			ul#experience {
-				list-style-type:none;
-				list-style-position: inside;
-				margin-left: 10px;
-				margin-bottom: 0;
-				padding-bottom:0;
-			}
-
-			.comment{
-				font-size: 8pt;
-				padding: 0;
-				margin: 0;
-				text-align: center;
-			}
-
+			/* HTML5 display-role reset for older browsers */
 			
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+
+			html {
+				width: 100%;
+			}
+			
+			body {
+				line-height: 1;
+				width: 80%;
+				padding: 20px 10% 0 10%;
+			}
 
 			a {
 				color: black;
 				text-decoration: none;
 			}
-			#header>div{
-				width: 24%;
-				display: inline-block;
-				vertical-align: bottom;
-			}
-			#header>h1 {
-				display: inline-block;
-				width: 50%;
-				vertical-align: bottom;
-			}
 
+			h1, h2, h3 {
+				font-weight: bold;
+				padding: 5px 0 0 0;
+			}
 			
-			#postal{
-				text-align: right;
+			h1{
+				font-size: 130%;
 			}
-
-			#electronic{
-				
-				text-align: left;
+			
+			h2 {
+				font-size: 110%;
+				text-decoration: underline;
 			}
-
-			hr {
+			
+			h3 {
+				font-size: 100%;
+			}
+			
+			ul {margin-left: 1em; padding-left: 0;} 
+			p { font-style: italic;}
+			
+			.callout {
+				border-style: solid;
+				border-width: 1px 0 1px 0;
 				width: 100%;
-				clear: both;
-				margin: 0;
+				text-align: center;
+				padding: 1px;
+				font-size: 9pt;
 			}
+
+			ul.header3{
+				width: 100%;
+				list-style-type: none;
+				list-style-position:inside;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.header3>li{
+				display: inline-block;
+				float: left;
+				clear: none;
+				padding: 0;
+			}
+			
+			.header3>li:first-child{
+				text-align: left;
+				width: 30%;
+			}
+
+			.header3>li:first-child+li{
+				text-align: center;				
+				width: 40%;
+			}
+
+			.header3>li:first-child+li+li{
+				text-align: right;				
+				width: 30%;
+			}
+			
+
+
 /*]]>*/
 		</style>
 	</head>
 	<body>
-		<table class="header3"><tbody><tr><td>
-					<ul>
-						<li><a href="mailto:matt@forsetti.com">matt@forsetti.com</a></li>
-						<li>(c)860-823-9246</li>
-					</ul>
-				</td><td><h1>Matthew J. Smith</h1></td><td>
-					<ul>
-						<li>P.O. Box 235</li>
-						<li>Hanover, CT 06350</li>
-					</ul>
-		</td></tr></tbody></table>
-		<hr />
-		<div class="comment">Latest resume always available at <a href="http://forsetti.com">http://forsetti.com</a></div>
-		<hr/>
+		<ul class="header3">
+			<li><a href="mailto:matt@forsetti.com">matt@forsetti.com</a><br />(c)860-823-9246</li><li><h1>Matthew J. Smith</h1></li><li>P.O. Box 235<br/>Hanover, CT 06350</li></ul>
+		<div class="callout">Latest resume always available at <a href="http://forsetti.com">http://forsetti.com</a></div>
+
 		<h2>Skills &amp; Qualifications</h2>
 		<ul>
 			<li>Strong problem solving skills, able to decompose complex problems and match technology to requirements.</li>
 			<li>Able to identify and develop methods of integration across heterogeneous technologies.</li>
 			<li>Strong interpersonal skills, able to interact in a team environment, as a leader or member.</li>
 			<li>Strong supporter of Open Standards and Free/Open/Community Source Software.</li>
-			<li>Eleven years experience at the University of Connecticut developing, leading, and providing enterprise scale solutions to 50,000 immediate customers in multiple locations around the state of Connecticut, and to a public community located around the world.</li>
-			<li>Three years experience with oversight of teams supporting over three hundred Linux, Windows, Unix, and Mainframe servers and services.</li>
+			<li>Twelve years experience at the University of Connecticut developing, leading, and providing enterprise scale solutions to 50,000 immediate customers in multiple locations around the state of Connecticut, and to a public community located around the world.</li>
+			<li>Four years experience with oversight of teams supporting over three hundred Linux, Windows, Unix, and Mainframe servers and services.</li>
 			<li>Co-maintainer of mod_auth_cas, the official JA-SIG CAS Apache module, included in Debian, Ubuntu, and Fedora Linux distributions.</li>
 			<li>Proficient in numerous technology areas, including (but not limited to):
-			<table id="proficiencies"><tr><td>
-				Linux<ul>
+				<h3>Linux</h3><ul>
 					<li>Administration of Debian Linux, Ubuntu Linux, SuSE Linux Enterprise Server, Red Hat Enterprise Linux.</li>
 					<li>Administration of Apache, Tomcat, OpenLDAP, MIT Kerberos, Samba, OpenAFS, Subversion, Plone, Trac, Zabbix, and other enterprise services commonly deployed on Linux.</li>
-				</ul></td><td>
-				Virtualization &amp; "Cloud"<ul>
+				</ul><h3>Virtualization &amp; "Cloud"</h3><ul>
 					<li>Strategy and oversight of VMWare &amp; IBM Blade Center deployments providing "Private Cloud" solution.</li>
 					<li>Familiarity with several "Private Cloud" and "Public Cloud" solutions, including Red Hat Enterprise Virtualization, IBM System z, Amazon  EC2, Google Apps, Microsoft Azure.</li>
-				</ul></td></tr><tr><td>
-				Identity &amp; Access Management Middleware<ul>
+				</ul><h3>Identity &amp; Access Management Middleware</h3><ul>
 					<li>Administration of MIT Kerberos, OpenLDAP, JA-SIG CAS, Internet2 Shibboleth.</li>
 					<li>Well versed in the functional areas of Identity &amp; Access Management, including Identity Reconciliation and Provisioning, Levels of Assurance, Federated Authorization, Single Sign On, Identity Lifecycles, etc.</li>
-				</ul></td><td>
-				Microsoft<ul>
-					<li>Administration of Active Directory, WINS, DNS, File Services, and business applications on Windows 2000/2003.</li>
+				</ul><h3>Microsoft</h3><ul>
+					<li>Administration of Active Directory, WINS, DNS, File Services, and business applications on Windows 200x.</li>
 					<li>Development in Python, Perl, Java, and C to integrate Microsoft environment with upstream identity and authentication systems.</li>
-				</ul></td></tr><tr><td>
-				Software Development<ul>
+				</ul><h3>Software Development</h3><ul>
 					<li>Experience developing software in C, Java, Perl, PHP, Python, Visual C++.</li>
 					<li>Limited experience developing web interfaces in XHTML, CSS, JavaScript.</li>
 				</ul>
-				</td></tr>
-			</table></li>
+			</li>
 		</ul>
-		<h2 id="current">Current Responsibilities</h2>
-		<h3>Lead of Linux Team, University of Connecticut ITS, Storrs CT (September 2010 - Present)</h3>
+		<h2>Career</h2>
+		<h3>September 2010 - Present: Lead of Linux &amp; Virtualization Team, University of Connecticut ITS, Storrs CT</h3>
 		<div>Proposed and was given leadership of a newly created Linux team in September 2010, consolidated from the previous Virtualization, Middleware, and R&amp;D teams, plus the Linux members of the previous Unix team.  Responsible for oversight and implementation of critical Linux-based strategies.  Team is responsible for:
 			<ul>
 				<li>Physical and virtual hosting on IBM Blade Centers and VMWare VSphere 4.</li>
@@ -213,50 +162,34 @@
 				<li>Expansion of the current student email suite to include a third-party hosted option providing greater service to students.</li>
 			</ul>
 		</div>
-		<h2>Prior Experience</h2>
-		<h3>2000-Present: University of Connecticut ITS (formerly, University Computer Center), Storrs, CT</h3>
-		<p>Joined the University of Connecticut's ITS department after graduation in 2000 as a Windows Server Support team member.  Responsibilities have progressed through both functional and strategic leadership:</p>
-		<ul id="experience">
-			<li><h4>Interim Architect and Manager of Server Support (July 2009 - August 2010)</h4>
-				<div>Due to organizational changes, was asked to temporarily fill a functional management position.  Accepted interim position with stipulation that responsibilities would be temporary, with rapid return to strategic/technical role.  Provided management leadership to the three existing highly-functional teams and three new teams totaling 25 members:
-					<ul>
-						<li><em>Unix Team</em>, hosting the University's PeopleSoft and Oracle solution on AIX, the Blackboard ILM solution on Solaris, and a variety of services such as DNS, web hosting, application hosting, podcasting, and email routing and filtering on Linux.</li>
-						<li><em>Mainframe Team</em>, maintaining IBM T16 and z890 Mainframes, running MVS(zOS)/VM and all Mainframe security, printing, scheduling, backups, and software management, and providing zVM virtual hosting of several dozen Linux guests.</li>
-						<li><em>Windows Team</em>, maintaining over one hundred Windows Server installations, and a variety of services such as as Active Directory, Exchange, file services, document management services, and numerous departmental services.</li>
-						<li><em>Virtualization Team</em>, a newly formed team responsible for the new VMWare and IBM Blade Center environment, providing physical and virtual hosting for the Windows and Linux teams.</li>
-						<li><em>Middleware Team</em>, a newly formed team responsible for "Application Middleware" including Tomcat and Glassfish application servers, and "Identity and Access Management Middleware" including OpenLDAP directories, MIT Kerberos, and CAS Web Initial Sign-On solutions.</li>
-						<li><em>R&amp;D Team</em>, a newly formed team responsible for researching future technologies and developing innovative solutions to immediate needs, often integrating third-party software with existing infrastructure.</li>
-					</ul>
-					Also led or oversaw major consolidation initiatives:
-					<ul>
-						<li>Deployment of two IBM Blade Center H solutions and VMWare VSphere 4.0 hosting over 100 Windows and Linux servers, to replace two legacy VMWare installations and decommission several dozen physical Linux and Windows servers.</li>
-						<li>Deployment of SpringSource tc Server solution to consolidate legacy Glassfish servers and several dozen unmanaged Tomcat installations of various versions.</li>
-						<li>Development of strategy to consolidate variety of unmanaged Red Hat, SuSE, Ubuntu, and Debian installations to a Red Hat Enterprise Linux and Debian Linux.</li>
-						<li>Deployment of an IBM z10 mainframe to consolidate all mainframe workloads from legacy T16 and z890 systems, reducing risk of legacy hardware and reducing heat/power requirements in data center.</li>
-					</ul>
-				</div>
-			</li>
-			<li><h4>Member of Server Support Group (April 2000 - Present)</h4>
-				<p>Held multiple roles over 9 years within the Server Support Group, with strategic and operational responsibilities across a variety of enterprise services on Linux, Solaris, and Windows, and significant development in a variety of languages to integrate heterogeneous systems.</p>
-				<ul>
-					<li><h5>Identity &amp; Access Management Architect (2001 - Present)</h5>
-						<p>Responsible for developing strategy for expansion of Identity &amp; Access Management solution and maintaining current solution including MIT Kerberos, OpenLDAP, JA-SIG CAS, and several locally developed provisioning solutions in C, Java, Perl, and Python.</p>
-					</li>
-					<li><h5>Web Initial Sign-On Administrator (2006 - Present)</h5>
-						<p>Deployed UConn's first Web Initial Sign-On solution, JA-SIG CAS.  Contributed the "JAASAuthenticationHandler" to meet local requirement for multiple authentication sources.  Co-maintainer of mod_auth_cas, the official JA-SIG CAS Apache module.</p>
-					</li>
-					<li><h5>Directory Services Administrator (2001 - Present)</h5>
-						<p>Designed and deployed the University's first-generation iPlanet LDAP and MIT Kerberos in 2001 and second-generation OpenLDAP services in 2003.  Developed provisioning solution in Perl and Java to manage user entries in LDAP and Kerberos.</p>
-					</li>
-					<li><h5>Team Lead for Windows Server Team (September 2008 - April 2009)</h5>
-						<p>Led team of 7 responsible for all aspects of 100+ Microsoft Windows servers, including maintaining the University's central Active Directory and Exchange services, file services, document management services, and several dozen departmental services.</p>
-					</li>
-					<li><h5>Windows Server Team, Active Directory Administrator (2000 - April 2009)</h5>
-						<p>Joined Windows Server Support team in 2000, providing support for Windows and Novell servers distributed around campus.  Co-designed UConn Active Directory in 2000 and developed provisioning solution in Perl to manage user entries and groups.</p>
-					</li>
-				</ul>
-			</li>
-		</ul>
+		<h3>July 2009 - August 2010: Interim Architect and Manager of Server Support</h3>
+		<div>Due to organizational changes, was asked to temporarily fill a functional management position.  Accepted interim position with stipulation that responsibilities would be temporary, with rapid return to strategic/technical role.  Provided management leadership to the three existing highly-functional teams and three new teams totaling 25 members.
+			<ul>
+				<li><em>Unix Team</em>, hosting the University's PeopleSoft and Oracle solution on AIX, the Blackboard ILM solution on Solaris, and a variety of services such as DNS, web hosting, application hosting, podcasting, and email routing and filtering on Linux.</li>
+				<li><em>Mainframe Team</em>, maintaining IBM T16 and z890 Mainframes, running MVS(zOS)/VM and all Mainframe security, printing, scheduling, backups, and software management, and providing zVM virtual hosting of several dozen Linux guests.</li>
+				<li><em>Windows Team</em>, maintaining over one hundred Windows Server installations, and a variety of services such as as Active Directory, Exchange, file services, document management services, and numerous departmental services.</li>
+				<li><em>Virtualization Team</em>, a newly formed team responsible for the new VMWare and IBM Blade Center environment, providing physical and virtual hosting for the Windows and Linux teams.</li>
+				<li><em>Middleware Team</em>, a newly formed team responsible for "Application Middleware" including Tomcat and Glassfish application servers, and "Identity and Access Management Middleware" including OpenLDAP directories, MIT Kerberos, and CAS Web Initial Sign-On solutions.</li>
+				<li><em>R&amp;D Team</em>, a newly formed team responsible for researching future technologies and developing innovative solutions to immediate needs, often integrating third-party software with existing infrastructure.</li>
+			</ul>
+			Also led or oversaw major consolidation initiatives:
+			<ul>
+				<li>Deployment of two IBM Blade Center H solutions and VMWare VSphere 4.0 hosting over 100 Windows and Linux servers, to replace two legacy VMWare installations and decommission several dozen physical Linux and Windows servers.</li>
+				<li>Deployment of SpringSource tc Server solution to consolidate legacy Glassfish servers and several dozen unmanaged Tomcat installations of various versions.</li>
+				<li>Development of strategy to consolidate variety of unmanaged Red Hat, SuSE, Ubuntu, and Debian installations to a Red Hat Enterprise Linux and Debian Linux.</li>
+				<li>Deployment of an IBM z10 mainframe to consolidate all mainframe workloads from legacy T16 and z890 systems, reducing risk of legacy hardware and reducing heat/power requirements in data center.</li>
+			</ul>
+		</div>
+		<h3>Identity &amp; Access Management Architect (2001 - Present)</h3>
+		<div>Responsible for developing strategy for expansion of Identity &amp; Access Management solution and maintaining current solution including MIT Kerberos, OpenLDAP, JA-SIG CAS, and several locally developed provisioning solutions in C, Java, Perl, and Python.</div>
+		<h3>Web Initial Sign-On Administrator (2006 - Present)</h3>
+		<div>Deployed UConn's first Web Initial Sign-On solution, JA-SIG CAS.  Contributed the "JAASAuthenticationHandler" to meet local requirement for multiple authentication sources.  Co-maintainer of mod_auth_cas, the official JA-SIG CAS Apache module.</div>
+		<h3>Directory Services Administrator (2001 - Present)</h3>
+		<div>Designed and deployed the University's first-generation iPlanet LDAP and MIT Kerberos in 2001 and second-generation OpenLDAP services in 2003.  Developed provisioning solution in Perl and Java to manage user entries in LDAP and Kerberos.</div>
+		<h3>Team Lead for Windows Server Team (September 2008 - April 2009)</h3>
+		<div>Led team of 7 responsible for all aspects of 100+ Microsoft Windows servers, including maintaining the University's central Active Directory and Exchange services, file services, document management services, and several dozen departmental services.</div>
+		<h3>Windows Server Team, Active Directory Administrator (2000 - April 2009)</h3>
+		<div>Joined Windows Server Support team in 2000, providing support for Windows and Novell servers distributed around campus.  Co-designed UConn Active Directory in 2000 and developed provisioning solution in Perl to manage user entries and groups.</div>
 		<h2>Other Notable Activities</h2>
 		<ul>
 			<li>2010: Success Story published by Mainline Information Systems <a href="http://mainline.com/_web/pdfs/success-stories/SS-UnivConnecticut-Blade.pdf">"The University of Connecticut Virtualizes and Consolidates
