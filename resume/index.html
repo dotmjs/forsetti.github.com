@@ -7,6 +7,22 @@
 		<title>Résumé: Matthew J. Smith</title>
 		<style type="text/css">/* 
 <![CDATA[*/
+
+			@-webkit-keyframes pulse {
+				from {
+					opacity: 1.0;
+					color: #000000;
+				}
+				50% { 
+					opacity: 0.9;
+					color: #000088;
+				}
+				to { 
+					opacity: 1.0;
+					color: #000000;
+				}
+			}
+			
 			* {
 				margin: 0;
 				padding: ;
@@ -127,10 +143,18 @@
 				width: 30%;
 			}
 			
+			a {
+				-webkit-animation-name: pulse;
+				-webkit-animation-duration: 2s; 
+				-webkit-animation-iteration-count: infinite; 
+			}
+			
 			a:hover{
 				font-style: normal;
 				font-weight: bold;
+				
 			}
+			
 						
   /*]]>
 */</style>
@@ -156,7 +180,7 @@
 			<li>Strong advocate for Open Standards and Free/Open/Community Source Software.</li>
 			<li>Twelve years experience at the University of Connecticut developing, leading, and providing enterprise scale solutions to 50,000 immediate customers in multiple locations around the state of Connecticut, and to a public community located around the world.</li>
 			<li>Four years experience with oversight of teams supporting over three hundred Linux, Windows, Unix, and Mainframe servers and services.</li>
-			<li>Co-maintainer of mod_auth_cas, the official JA-SIG CAS Apache module, included in Debian, Ubuntu, and Fedora Linux distributions.</li>
+			<li>Co-maintainer of <a href="http://github.com/jasig/mod_auth_cas">mod_auth_cas</a>, the official Jasig</a> CAS Apache module, included in Debian, Ubuntu, and Fedora Linux distributions.</li>
 			<li>Proficient in numerous technology areas, including (but not limited to): 
 			<h3>Linux</h3>
 			<ul>
@@ -170,7 +194,7 @@
 			</ul>
 			<h3>Identity &amp; Access Management Middleware</h3>
 			<ul>
-				<li>Administration of MIT Kerberos, OpenLDAP, JA-SIG CAS, Internet2 Shibboleth.</li>
+				<li>Administration of MIT Kerberos, OpenLDAP, Jasig CAS, Internet2 Shibboleth.</li>
 				<li>Well versed in the functional areas of Identity &amp; Access Management, including Identity Reconciliation and Provisioning, Levels of Assurance, Federated Authorization, Single Sign On, Identity Lifecycles, etc.</li>
 			</ul>
 			<h3>Microsoft</h3>
@@ -192,7 +216,7 @@
 				<li>Physical and virtual hosting on IBM Blade Centers and VMWare VSphere 4.</li>
 				<li>Several hundred Debian, Red Hat, SuSE, and Ubuntu Linux installations.</li>
 				<li>Web site and application hosting for individuals, departments, and the enterprise using Apache, PHP, Tomcat, Glassfish, and MySQL, serving two million requests/day.</li>
-				<li>Authentication, authorization, and user provisioning technologies in support of access into University services, leveraging MIT Kerberos, OpenLDAP, JA-SIG CAS, and several thousand lines of locally developed C, Java, Perl, and Python.</li>
+				<li>Authentication, authorization, and user provisioning technologies in support of access into University services, leveraging MIT Kerberos, OpenLDAP, Jasig CAS, and several thousand lines of locally developed C, Java, Perl, and Python.</li>
 				<li>Mail infrastructure including Cyrus IMAP, Squirrelmail, Sendmail, Postfix, Barracuda Spam appliances, and locally developed alias management application, providing 35,000 mailboxes and filtering/routing one million emails/day.</li>
 				<li>Hosting of other University services, such as the Enterprise Learning Management Blackboard solution, CA Unicenter Service Desk, and dozens of academic and administrative services.</li>
 			</ul>Also engaged in several new strategic endeavors, including: 
@@ -226,9 +250,9 @@
 				<li>Deployment of an IBM z10 mainframe to consolidate all mainframe workloads from legacy T16 and z890 systems, reducing risk of legacy hardware and reducing heat/power requirements in data center.</li>
 			</ul></li>
 			<li>
-			<h3>2001 - Present: Identity &amp; Access Management Architect</h3>Responsible for developing strategy for expansion of Identity &amp; Access Management solution and maintaining current solution including MIT Kerberos, OpenLDAP, JA-SIG CAS, and several locally developed provisioning solutions in C, Java, Perl, and Python.</li>
+			<h3>2001 - Present: Identity &amp; Access Management Architect</h3>Responsible for developing strategy for expansion of Identity &amp; Access Management solution and maintaining current solution including MIT Kerberos, OpenLDAP, Jasig CAS, and several locally developed provisioning solutions in C, Java, Perl, and Python.</li>
 			<li>
-			<h3>2006 - Present: Web Initial Sign-On Administrator</h3>Deployed UConn's first Web Initial Sign-On solution, JA-SIG CAS. Contributed the "JAASAuthenticationHandler" to meet local requirement for multiple authentication sources. Co-maintainer of mod_auth_cas, the official JA-SIG CAS Apache module.</li>
+			<h3>2006 - Present: Web Initial Sign-On Administrator</h3>Deployed UConn's first Web Initial Sign-On solution, Jasig CAS. Contributed the "JAASAuthenticationHandler" to meet local requirement for multiple authentication sources. Co-maintainer of mod_auth_cas, the official Jasig CAS Apache module.</li>
 			<li>
 			<h3>2001 - Present: Directory Services Administrator</h3>Designed and deployed the University's first-generation iPlanet LDAP and MIT Kerberos in 2001 and second-generation OpenLDAP services in 2003. Developed provisioning solution in Perl and Java to manage user entries in LDAP and Kerberos.</li>
 			<li>
@@ -241,9 +265,9 @@
 			<li>2011-2012: Co-chair of "State of Connecticut Joint Labor &amp; Management IT Cost Savings and Transformation Working Group", charged with identifying potential savings and positive change in the use of IT throughout Connecticut State Agencies and Institutions.</li>
 			<li>2010: Success Story published by Mainline Information Systems 
 			<a href="http://mainline.com/_web/pdfs/success-stories/SS-UnivConnecticut-Blade.pdf">"The University of Connecticut Virtualizes and Consolidates Storrs Data Center" (http://mainline.com/_web/pdfs/success-stories/SS-UnivConnecticut-Blade.pdf)</a>.</li>
-			<li>2010: Member of State of Connecticut "Schedule S6: IT Records Retention" committee, charged with updating state policy on IT records retention.</li>
+			<li>2010: Member of State of Connecticut <a href="http://www.cslib.org/publicrecords/stateretsched/S6InfoSystms2010.pdf">"S6: Information Systems Records"</a> committee, charged with updating state policy on IT records retention.</li>
 			<li>2009-2012: Chair of University of Connecticut Technology Implementers Group and Student Technology Advisory Group.</li>
-			<li>2007-2008: Member of JA-SIG Planning Committee as CAS Liaison for April 2008 conference in St. Paul titled <a href="http://www.jasig.org/conferences/08spring/index.html">"The Community Source Way"</a>.</li>
+			<li>2007-2008: Member of Jasig Planning Committee as CAS Liaison for April 2008 conference in St. Paul titled <a href="http://www.jasig.org/conferences/08spring/index.html">"The Community Source Way"</a>.</li>
 			<li>2004-2008: Multiple presentations to the UConn LUG/ACM on a variety of technical topics.</li>
 			<li>2003-Present: Attend Internet2/EDUCAUSE Middleware-related conferences roughly bi-yearly.</li>
 		</ul>
