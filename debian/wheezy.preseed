@@ -66,6 +66,7 @@ d-i partman-auto/purge_lvm_from_device  boolean true
 d-i partman-md/device_remove_md boolean true
 d-i partman-lvm/confirm boolean true
 d-i partman-lvm/confirm_nooverwrite boolean true
+d-i partman-auto-lvm/no_boot boolean true
 
 # Partman recipe
 d-i partman-auto/expert_recipe string                         \
