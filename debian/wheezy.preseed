@@ -25,8 +25,8 @@ d-i netcfg/dhcp_failed note
 # Any hostname and domain names assigned from dhcp take precedence over
 # values set here. However, setting the values still prevents the questions
 # from being shown, even if values come from dhcp.
-#d-i netcfg/get_hostname string host
-#d-i netcfg/get_domain string void.null
+d-i netcfg/get_hostname string (none)
+d-i netcfg/get_domain string (none)
 
 # If non-free firmware is needed for the network or other hardware, you can
 # configure the installer to always try to load it, without prompting. Or
