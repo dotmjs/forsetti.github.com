@@ -138,7 +138,7 @@ d-i apt-setup/volatile_host string volatile.debian.org
 tasksel tasksel/first multiselect none
 
 # Individual additional packages to install
-d-i pkgsel/include string openssh-server ntp open-vm-tools module-assistant linux-headers-2.6-amd64 build-essential krb5-config krb5-user zabbix-agent
+d-i pkgsel/include string openssh-server ntp
 d-i pkgsel/exclude string mpt-status
 # Whether to upgrade packages after debootstrap.
 # Allowed values: none, safe-upgrade, full-upgrade
