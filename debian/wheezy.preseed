@@ -75,7 +75,7 @@ d-i partman-auto/expert_recipe string                         \
                       method{ lvm }                           \
               .                                               \
               200 4096 200 ext4                             \
-#                      $lvmok{ }  lv_name{ BOOT } ${bootable}  \
+                      $lvmok{ }  lv_name{ BOOT } ${bootable}  \
                       $primary{ } $bootable{ }                \
                       method{ format } format{ }              \
                       use_filesystem{ } filesystem{ ext4 }    \
