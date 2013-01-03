@@ -1,0 +1,54 @@
+Bootstrap Server
+----------------
+puppet master
+acng
+ldap master
+kerberos kadmin
+-----------------
+
+http://http.us.debian.org/debian/dists/wheezy/main/installer-amd64
+http://repository.local/debian-installer/dists/wheezy/main/installer-amd64
+
+url=http://www.forsetti.com/debian/wheezy.preseed locale=en_US.UTF-8 keymap=us priority=high hostname=repository domain=local
+
+/dev/vg_blackbox/repository.local
+
+
+---
+apt-get install apache2 apt-cacher-ng avahi-daemon
+
+/etc/apt-cacher-ng/acng.conf
+CacheDir: /srv/packages/acng
+LogDir: /var/log/apt-cacher-ng
+Port:3142
+ReportPage: acng-report.html
+ExTreshold: 4
+
+/etc/apache2/sites-enabled/repository.local
+<VirtualHost *:80>
+        ServerName repository.local
+
+        <Location "/debian">
+                ProxyPass http://localhost:3142/http.us.debian.org/debian
+                ProxyPassReverse http://localhost:3142/http.us.debian.org/debian
+                SetEnv proxy-nokeepalive 1
+        </Location>
+
+        <Location "/security">
+                ProxyPass http://localhost:3142/security.debian.org
+                ProxyPassReverse http://localhost:3142/security.debian.org
+                SetEnv proxy-nokeepalive 1
+        </Location>
+
+        <Location "/acng">
+                ProxyPass http://localhost:3142
+                ProxyPassReverse http://localhost:3142
+				SetEnv proxy-nokeepalive 1
+        </Location>
+
+</VirtualHost>
+
+
+mkdir /srv/apt-cacher-ng
+a2enmod proxy proxy_http
+service apache2 restart
